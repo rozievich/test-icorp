@@ -22,6 +22,7 @@ if __name__ == "__main__":
 
         part2 = received_data.get("part2")
         code = part1_data + part2
+        print("Yaratilgan code:", code)
 
         response = requests.get(url=url, params={"code": code})
         if response.status_code == 200:
